@@ -3,3 +3,19 @@
     display: flex;
     margin: 5px auto;
 }
+
+
+
+.btn-styles(@backgroundColor, @fontColor){
+    background-color: @backgroundColor;
+    width: 20%;
+    height: 25px;
+    color: @fontColor;
+    border-radius: 5px;
+    text-align: center;
+    
+    &:hover{
+        background-color: @sea-shell;
+        color: @btn-bg-color;
+    }
+}//Closes .btn-styles
