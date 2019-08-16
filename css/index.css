@@ -174,15 +174,20 @@ p {
   font-size: 3rem;
 }
 .nav-bar .nav {
-  width: 40%;
+  width: 70%;
   display: flex;
   margin: 5px auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .nav-bar .nav a {
   text-decoration: none;
   font-size: 1.8rem;
   color: #454A59;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav {
+    width: 90%;
+  }
 }
 footer {
   color: #22283B;
@@ -204,6 +209,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
